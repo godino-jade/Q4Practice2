@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Q4 Practice2</title>
 </head>
 <body>
     <h1>Switch Statement</h1>
 
+    <button type="btn btn-success" onclick="teamRank()">Rank</button>
 
     <script>
         let team = "Green"; // string
@@ -31,6 +33,33 @@
             
             default:
                 alert("No team found.");
+        }
+
+        function teamRank(){
+            let rank = "1st";
+
+            switch(rank){
+                case "1st":
+                    message = "Champion!";
+                    break;
+                   
+                case "2nd":
+                    message = "2nd Place!";
+                    break;
+                
+                case "3rd":
+                    message = "3rd Place!";
+                    break;
+
+                case "4th":
+                    message = "4th Place!";
+                    break;
+                
+                default:
+                    message = "Ranking could not be determined.";
+            }
+
+                alert(message)
         }
     </script>
 </body>
